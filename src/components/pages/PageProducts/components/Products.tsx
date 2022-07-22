@@ -36,7 +36,7 @@ export default function Products() {
 
   useEffect(() => {
     axios.get(`${API_PATHS.product}/products`)
-        .then(res => setProducts(res.data.products));
+        .then(res => setProducts(res.data));
   }, [])
 
   return (
